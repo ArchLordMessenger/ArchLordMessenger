@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MacroSwitch/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/MacroSwitch/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/MacroSwitch/obj/Debug/MacroSwitch.csproj.AssemblyReference.cache
+/MacroSwitch/bin/Debug/MacroSwitch.exe
+/MacroSwitch/bin/Debug/MacroSwitch.pdb
+*.vsidx
+*.lock
+*.suo
+*.dll
+/MacroSwitch/obj/Debug/ArchlordMessenger.csproj.AssemblyReference.cache
+/MacroSwitch/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/MacroSwitch/obj/Debug/MacroSwitch.csproj.CoreCompileInputs.cache
+/MacroSwitch/obj/Debug/MacroSwitch.csproj.FileListAbsolute.txt
+/MacroSwitch/obj/Debug/MacroSwitch.csproj.GenerateResource.cache
+/MacroSwitch/obj/Debug/MacroSwitch.csproj.SuggestedBindingRedirects.cache
+/MacroSwitch/obj/Debug/MacroSwitch.exe
+/MacroSwitch/obj/Debug/MacroSwitch.pdb
