@@ -60,6 +60,7 @@ namespace MacroSwitch
         SwitchTool switcher;
         SaveState state;
 
+        string processName = "Archonia";
         public Form1()
         {
             InitializeComponent();
@@ -234,7 +235,7 @@ namespace MacroSwitch
         {
             InitMacroDefaults();
             Prepare();
-            IntPtr procHandle = Process.GetProcessesByName("alefclient").Where(x => x.MainWindowHandle == targetProcess).ToList().FirstOrDefault().MainWindowHandle;
+            IntPtr procHandle = Process.GetProcessesByName(processName).Where(x => x.MainWindowHandle == targetProcess).ToList().FirstOrDefault().MainWindowHandle;
 
             if (procHandle == targetProcess)
             {
