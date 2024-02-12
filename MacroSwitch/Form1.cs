@@ -61,6 +61,7 @@ namespace MacroSwitch
         SaveState state;
 
         string processName = "Archonia";
+
         public Form1()
         {
             InitializeComponent();
