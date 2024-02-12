@@ -1,0 +1,14 @@
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.exe.config
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.exe
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\bin\Debug\MacroSwitch.pdb
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.AssemblyReference.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.ColorPicker.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.CustomControl1.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.Form1.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.Properties.Resources.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.SwitchTool.resources
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.GenerateResource.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.CoreCompileInputs.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.csproj.Fody.CopyLocal.cache
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.exe
+C:\Users\32470\Downloads\MacroSwitch\MacroSwitch\MacroSwitch\obj\Debug\MacroSwitch.pdb
