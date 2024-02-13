@@ -57,18 +57,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ALProcess.cs" />
+    <Compile Include="Helpers\ALProcess.cs" />
     <Compile Include="Forms\ColorPicker.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ColorPicker.Designer.cs">
       <DependentUpon>ColorPicker.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomControl1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CustomControl1.Designer.cs">
-      <DependentUpon>CustomControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
@@ -79,7 +73,7 @@
     <Compile Include="Helpers\BotHelpers.cs" />
     <Compile Include="Helpers\HotKey.cs" />
     <Compile Include="Helpers\MacroHelper.cs" />
-    <Compile Include="MyCheckBox.cs">
+    <Compile Include="Models\MyCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
@@ -93,9 +87,6 @@
     </Compile>
     <EmbeddedResource Include="Forms\ColorPicker.resx">
       <DependentUpon>ColorPicker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomControl1.resx">
-      <DependentUpon>CustomControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

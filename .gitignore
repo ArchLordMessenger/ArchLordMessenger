@@ -19,3 +19,5 @@
 /MacroSwitch/obj/Debug/MacroSwitch.csproj.SuggestedBindingRedirects.cache
 /MacroSwitch/obj/Debug/MacroSwitch.exe
 /MacroSwitch/obj/Debug/MacroSwitch.pdb
+/MacroSwitch/FodyWeavers.xml
+/MacroSwitch/FodyWeavers.xsd
