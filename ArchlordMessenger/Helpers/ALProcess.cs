@@ -9,7 +9,7 @@ using System.Windows;
 using System.Windows.Forms;
 using static System.Windows.Forms.Control;
 
-namespace MacroSwitch
+namespace ArchlordMessenger
 {
     public class ALProcess
     {

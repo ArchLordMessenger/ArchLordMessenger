@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMessenger
 {
     partial class ColorPicker
     {

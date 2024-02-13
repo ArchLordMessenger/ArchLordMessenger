@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Input;
 using System.Windows.Interop;
 
-namespace MacroSwitch
+namespace ArchlordMessenger
 {
     public class HotKey : IDisposable
     {

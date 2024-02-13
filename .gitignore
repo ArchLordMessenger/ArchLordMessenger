@@ -21,3 +21,11 @@
 /MacroSwitch/obj/Debug/MacroSwitch.pdb
 /MacroSwitch/FodyWeavers.xml
 /MacroSwitch/FodyWeavers.xsd
+*.sqlite
+*.user
+/MacroSwitch/bin/Debug/MacroSwitch.exe.config
+/MacroSwitch/obj
+/.vs
+/MacroSwitch/bin/Debug
+/ArchlordMessenger/bin/Debug
+/ArchlordMessenger/obj

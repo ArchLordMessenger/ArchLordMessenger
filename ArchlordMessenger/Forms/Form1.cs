@@ -13,7 +13,7 @@ using System.Windows;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace MacroSwitch
+namespace ArchlordMessenger
 {
     public partial class Form1 : Form
     {

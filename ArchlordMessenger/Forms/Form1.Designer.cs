@@ -1,4 +1,4 @@
-﻿namespace MacroSwitch
+﻿namespace ArchlordMessenger
 {
     partial class Form1
     {
@@ -32,26 +32,26 @@
 			this.txtStartBar = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.Row1Skill1 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill2 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill3 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill4 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill5 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill6 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill7 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill8 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill9 = new MacroSwitch.MyCheckBox();
-			this.Row1Skill10 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill10 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill9 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill8 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill7 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill6 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill5 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill4 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill3 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill2 = new MacroSwitch.MyCheckBox();
-			this.Row2Skill1 = new MacroSwitch.MyCheckBox();
+			this.Row1Skill1 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill2 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill3 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill4 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill5 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill6 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill7 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill8 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill9 = new ArchlordMessenger.MyCheckBox();
+			this.Row1Skill10 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill10 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill9 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill8 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill7 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill6 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill5 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill4 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill3 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill2 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill1 = new ArchlordMessenger.MyCheckBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();

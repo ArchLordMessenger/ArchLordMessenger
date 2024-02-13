@@ -11,7 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MacroSwitch
+namespace ArchlordMessenger
 {
     public partial class ColorPicker : Form
     {
