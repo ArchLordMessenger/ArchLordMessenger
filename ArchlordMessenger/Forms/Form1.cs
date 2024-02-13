@@ -58,7 +58,7 @@ namespace ArchlordMessenger
 
         ColorPicker picker;
         SwitchTool switcher;
-        SaveState state;
+        Settings state;
 
         string processName = "Archonia";
 
@@ -68,7 +68,7 @@ namespace ArchlordMessenger
             InitializeComponent();
             SetWindowTitle();
 
-            state = new SaveState();
+            state = new Settings();
 
             int FirstHotkeyId = 1;
             int FirstHotKeyKey = (int)Keys.F2;
@@ -82,92 +82,72 @@ namespace ArchlordMessenger
             }
 
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+		private protected string txtXCoord_Text = "0";
+		private protected string txtYCoord_Text = "0";
+		private protected string txtDelay_Text = "1";
+		private protected string txtStartBar_Text = "0";
+		private protected int Row1BarNum_Value = 1;
+		private protected int Row2BarNum_Value = 2;
+		private protected int Row3BarNum_Value = 3;
+		private void Form1_Load(object sender, EventArgs e)
         {
-            if (File.Exists("config.xml"))
+            if (File.Exists("settings.xml"))
             {
                 loadConfig();
             }
 
-            baseX = state.XCoord;
-            YHeight = state.YCoord;
-            txtXCoord.Text = state.XCoord.ToString();
-            txtYCoord.Text = state.YCoord.ToString();
-            txtDelay.Text = state.Delay.ToString();
-            Row1BarNum.Value = state.Bar1Num;
-            Row2BarNum.Value = state.Bar2Num;
-            Row1Skill1.Checked = state.Row1.FirstOrDefault();
-            Row1Skill2.Checked = state.Row1[1];
-            Row1Skill3.Checked = state.Row1[2];
-            Row1Skill4.Checked = state.Row1[3];
-            Row1Skill5.Checked = state.Row1[4];
-            Row1Skill6.Checked = state.Row1[5];
-            Row1Skill7.Checked = state.Row1[6];
-            Row1Skill8.Checked = state.Row1[7];
-            Row1Skill9.Checked = state.Row1[8];
-            Row1Skill10.Checked = state.Row1[9];
-            Row2Skill1.Checked = state.Row2.FirstOrDefault();
-            Row2Skill2.Checked = state.Row2[1];
-            Row2Skill3.Checked = state.Row2[2];
-            Row2Skill4.Checked = state.Row2[3];
-            Row2Skill5.Checked = state.Row2[4];
-            Row2Skill6.Checked = state.Row2[5];
-            Row2Skill7.Checked = state.Row2[6];
-            Row2Skill8.Checked = state.Row2[7];
-            Row2Skill9.Checked = state.Row2[8];
-            Row2Skill10.Checked = state.Row2[9];
-            Row1Skill1X.Text = state.Row1OffsetX.FirstOrDefault().ToString();
-            Row1Skill2X.Text = state.Row1OffsetX[1].ToString();
-            Row1Skill3X.Text = state.Row1OffsetX[2].ToString();
-            Row1Skill4X.Text = state.Row1OffsetX[3].ToString();
-            Row1Skill5X.Text = state.Row1OffsetX[4].ToString();
-            Row1Skill6X.Text = state.Row1OffsetX[5].ToString();
-            Row1Skill7X.Text = state.Row1OffsetX[6].ToString();
-            Row1Skill8X.Text = state.Row1OffsetX[7].ToString();
-            Row1Skill9X.Text = state.Row1OffsetX[8].ToString();
-            Row1Skill10X.Text = state.Row1OffsetX[9].ToString();
-            Row1Skill1Y.Text = state.Row1OffsetY.FirstOrDefault().ToString();
-            Row1Skill2Y.Text = state.Row1OffsetY[1].ToString();
-            Row1Skill3Y.Text = state.Row1OffsetY[2].ToString();
-            Row1Skill4Y.Text = state.Row1OffsetY[3].ToString();
-            Row1Skill5Y.Text = state.Row1OffsetY[4].ToString();
-            Row1Skill6Y.Text = state.Row1OffsetY[5].ToString();
-            Row1Skill7Y.Text = state.Row1OffsetY[6].ToString();
-            Row1Skill8Y.Text = state.Row1OffsetY[7].ToString();
-            Row1Skill9Y.Text = state.Row1OffsetY[8].ToString();
-            Row1Skill10Y.Text = state.Row1OffsetY[9].ToString();
-            Row2Skill1X.Text = state.Row2OffsetX.FirstOrDefault().ToString();
-            Row2Skill2X.Text = state.Row2OffsetX[1].ToString();
-            Row2Skill3X.Text = state.Row2OffsetX[2].ToString();
-            Row2Skill4X.Text = state.Row2OffsetX[3].ToString();
-            Row2Skill5X.Text = state.Row2OffsetX[4].ToString();
-            Row2Skill6X.Text = state.Row2OffsetX[5].ToString();
-            Row2Skill7X.Text = state.Row2OffsetX[6].ToString();
-            Row2Skill8X.Text = state.Row2OffsetX[7].ToString();
-            Row2Skill9X.Text = state.Row2OffsetX[8].ToString();
-            Row2Skill10X.Text = state.Row2OffsetX[9].ToString();
-            Row2Skill1Y.Text = state.Row2OffsetY.FirstOrDefault().ToString();
-            Row2Skill2Y.Text = state.Row2OffsetY[1].ToString();
-            Row2Skill3Y.Text = state.Row2OffsetY[2].ToString();
-            Row2Skill4Y.Text = state.Row2OffsetY[3].ToString();
-            Row2Skill5Y.Text = state.Row2OffsetY[4].ToString();
-            Row2Skill6Y.Text = state.Row2OffsetY[5].ToString();
-            Row2Skill7Y.Text = state.Row2OffsetY[6].ToString();
-            Row2Skill8Y.Text = state.Row2OffsetY[7].ToString();
-            Row2Skill9Y.Text = state.Row2OffsetY[8].ToString();
-            Row2Skill10Y.Text = state.Row2OffsetY[9].ToString();
-            cbNewBar.Checked = state.bUseNewBar;
-            cbSwitch.Checked = state.bSwitch;
-        }
+			baseX = 0;
+			YHeight = 0;
 
-        private void loadConfig()
+			Row1Skill1.Checked = state.Row1 != null && state.Row1.FirstOrDefault();
+			Row1Skill2.Checked = state.Row1 != null && state.Row1[1];
+			Row1Skill3.Checked = state.Row1 != null && state.Row1[2];
+			Row1Skill4.Checked = state.Row1 != null && state.Row1[3];
+			Row1Skill5.Checked = state.Row1 != null && state.Row1[4];
+			Row1Skill6.Checked = state.Row1 != null && state.Row1[5];
+			Row1Skill7.Checked = state.Row1 != null && state.Row1[6];
+			Row1Skill8.Checked = state.Row1 != null && state.Row1[7];
+			Row1Skill9.Checked = state.Row1 != null && state.Row1[8];
+			Row1Skill10.Checked = state.Row1 != null && state.Row1[9];
+			Row2Skill1.Checked = state.Row1 != null && state.Row2.FirstOrDefault();
+			Row2Skill2.Checked = state.Row1 != null && state.Row2[1];
+			Row2Skill3.Checked = state.Row1 != null && state.Row2[2];
+			Row2Skill4.Checked = state.Row1 != null && state.Row2[3];
+			Row2Skill5.Checked = state.Row1 != null && state.Row2[4];
+			Row2Skill6.Checked = state.Row1 != null && state.Row2[5];
+			Row2Skill7.Checked = state.Row1 != null && state.Row2[6];
+			Row2Skill8.Checked = state.Row1 != null && state.Row2[7];
+			Row2Skill9.Checked = state.Row1 != null && state.Row2[8];
+			Row2Skill10.Checked = state.Row1 != null && state.Row2[9];
+			//Row3Skill1.Checked = state.Row1 != null && state.Row3.FirstOrDefault();
+			//Row3Skill2.Checked = state.Row1 != null && state.Row3[1];
+			//Row3Skill3.Checked = state.Row1 != null && state.Row3[2];
+			//Row3Skill4.Checked = state.Row1 != null && state.Row3[3];
+			//Row3Skill5.Checked = state.Row1 != null && state.Row3[4];
+			//Row3Skill6.Checked = state.Row1 != null && state.Row3[5];
+			//Row3Skill7.Checked = state.Row1 != null && state.Row3[6];
+			//Row3Skill8.Checked = state.Row1 != null && state.Row3[7];
+			//Row3Skill9.Checked = state.Row1 != null && state.Row3[8];
+			//Row3Skill10.Checked = state.Row1 != null && state.Row3[9];
+
+		}
+
+		private void loadConfig()
         {
-            XmlSerializer ser = new XmlSerializer(typeof(SaveState));
-            using (FileStream fs = File.OpenRead("config.xml"))
+            try
             {
-                state = (SaveState)ser.Deserialize(fs);
+				XmlSerializer ser = new XmlSerializer(typeof(Settings));
+				using (FileStream fs = File.OpenRead("settings.xml"))
+				{
+					state = (Settings)ser.Deserialize(fs);
+				}
+			}
+            catch (Exception)
+            {
+
+             
             }
+        
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -177,23 +157,13 @@ namespace ArchlordMessenger
 
         private void writeConfig()
         {
-            using (StreamWriter sw = new StreamWriter("config.xml"))
+            using (StreamWriter sw = new StreamWriter("settings.xml"))
             {
 
-                state.XCoord = Int32.Parse(txtXCoord.Text);
-                state.YCoord = Int32.Parse(txtYCoord.Text);
-                state.Delay = Int32.Parse(txtDelay.Text);
-                state.Bar1Num = (int)Row1BarNum.Value;
-                state.Bar2Num = (int)Row2BarNum.Value;
-                state.Row1 = new List<bool>() { Row1Skill1.Checked, Row1Skill2.Checked, Row1Skill3.Checked, Row1Skill4.Checked, Row1Skill5.Checked, Row1Skill6.Checked, Row1Skill7.Checked, Row1Skill8.Checked, Row1Skill9.Checked, Row1Skill10.Checked };
-                state.Row2 = new List<bool>() { Row2Skill1.Checked, Row2Skill2.Checked, Row2Skill3.Checked, Row2Skill4.Checked, Row2Skill5.Checked, Row2Skill6.Checked, Row2Skill7.Checked, Row2Skill8.Checked, Row2Skill9.Checked, Row2Skill10.Checked };
-                state.Row1OffsetX = new List<int>() { Int32.Parse(Row1Skill1X.Text), Int32.Parse(Row1Skill2X.Text), Int32.Parse(Row1Skill3X.Text), Int32.Parse(Row1Skill4X.Text), Int32.Parse(Row1Skill5X.Text), Int32.Parse(Row1Skill6X.Text), Int32.Parse(Row1Skill7X.Text), Int32.Parse(Row1Skill8X.Text), Int32.Parse(Row1Skill9X.Text), Int32.Parse(Row1Skill10X.Text) };
-                state.Row1OffsetY = new List<int>() { Int32.Parse(Row1Skill1Y.Text), Int32.Parse(Row1Skill2Y.Text), Int32.Parse(Row1Skill3Y.Text), Int32.Parse(Row1Skill4Y.Text), Int32.Parse(Row1Skill5Y.Text), Int32.Parse(Row1Skill6Y.Text), Int32.Parse(Row1Skill7Y.Text), Int32.Parse(Row1Skill8Y.Text), Int32.Parse(Row1Skill9Y.Text), Int32.Parse(Row1Skill10Y.Text) };
-                state.Row2OffsetX = new List<int>() { Int32.Parse(Row2Skill1X.Text), Int32.Parse(Row2Skill2X.Text), Int32.Parse(Row2Skill3X.Text), Int32.Parse(Row2Skill4X.Text), Int32.Parse(Row2Skill5X.Text), Int32.Parse(Row2Skill6X.Text), Int32.Parse(Row2Skill7X.Text), Int32.Parse(Row2Skill8X.Text), Int32.Parse(Row2Skill9X.Text), Int32.Parse(Row2Skill10X.Text) };
-                state.Row2OffsetY = new List<int>() { Int32.Parse(Row2Skill1Y.Text), Int32.Parse(Row2Skill2Y.Text), Int32.Parse(Row2Skill3Y.Text), Int32.Parse(Row2Skill4Y.Text), Int32.Parse(Row2Skill5Y.Text), Int32.Parse(Row2Skill6Y.Text), Int32.Parse(Row2Skill7Y.Text), Int32.Parse(Row2Skill8Y.Text), Int32.Parse(Row2Skill9Y.Text), Int32.Parse(Row2Skill10Y.Text) };
-                state.bUseNewBar = cbNewBar.Checked;
-                state.bSwitch = cbSwitch.Checked;
-                XmlSerializer ser = new XmlSerializer(typeof(SaveState));
+				state.Row1 = new List<bool>() { Row1Skill1.Checked, Row1Skill2.Checked, Row1Skill3.Checked, Row1Skill4.Checked, Row1Skill5.Checked, Row1Skill6.Checked, Row1Skill7.Checked, Row1Skill8.Checked, Row1Skill9.Checked, Row1Skill10.Checked };
+				state.Row2 = new List<bool>() { Row2Skill1.Checked, Row2Skill2.Checked, Row2Skill3.Checked, Row2Skill4.Checked, Row2Skill5.Checked, Row2Skill6.Checked, Row2Skill7.Checked, Row2Skill8.Checked, Row2Skill9.Checked, Row2Skill10.Checked };
+				//state.Row3 = new List<bool>() { Row3Skill1.Checked, Row3Skill2.Checked, Row3Skill3.Checked, Row3Skill4.Checked, Row3Skill5.Checked, Row3Skill6.Checked, Row3Skill7.Checked, Row3Skill8.Checked, Row3Skill9.Checked, Row3Skill10.Checked };
+				XmlSerializer ser = new XmlSerializer(typeof(Settings));
                 ser.Serialize(sw, state);
             }
         }

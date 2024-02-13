@@ -163,7 +163,7 @@
 			// 
 			this.Row1Skill1.Location = new System.Drawing.Point(90, 308);
 			this.Row1Skill1.Name = "Row1Skill1";
-			this.Row1Skill1.Size = new System.Drawing.Size(60, 65);
+			this.Row1Skill1.Size = new System.Drawing.Size(60, 60);
 			this.Row1Skill1.TabIndex = 27;
 			this.Row1Skill1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.Row1Skill1.UseVisualStyleBackColor = true;
