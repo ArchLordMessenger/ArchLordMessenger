@@ -957,7 +957,7 @@
 			// 
 			// btnDebug
 			// 
-			this.btnDebug.Location = new System.Drawing.Point(976, 0);
+			this.btnDebug.Location = new System.Drawing.Point(705, 28);
 			this.btnDebug.Name = "btnDebug";
 			this.btnDebug.Size = new System.Drawing.Size(75, 23);
 			this.btnDebug.TabIndex = 109;
@@ -967,7 +967,7 @@
 			// 
 			// btnSwitchOpen
 			// 
-			this.btnSwitchOpen.Location = new System.Drawing.Point(900, 0);
+			this.btnSwitchOpen.Location = new System.Drawing.Point(540, 28);
 			this.btnSwitchOpen.Name = "btnSwitchOpen";
 			this.btnSwitchOpen.Size = new System.Drawing.Size(75, 23);
 			this.btnSwitchOpen.TabIndex = 110;
@@ -1010,7 +1010,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1050, 450);
+			this.BackgroundImage = global::ArchlordMessenger.Properties.Resources.ArchlordMessenger;
+			this.ClientSize = new System.Drawing.Size(1026, 579);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.cbSwitch);
 			this.Controls.Add(this.cbNewBar);

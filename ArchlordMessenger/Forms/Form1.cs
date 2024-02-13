@@ -484,9 +484,14 @@ namespace ArchlordMessenger
             }
         }
 
-        private void ProcessMacroEntryBar1(int key, int delay)
-        {
-            int val = (int)Row1BarNum.Value;
+		private void ProcessMacroEntryBar1(List<int> list, int MacroProgress, int delay)
+		{
+			if (MacroProgress == 999)
+			{
+				return;
+			}
+			var key = list[MacroProgress];
+			int val = (int)Row1BarNum.Value;
             if (val == 1) MacroHelper.PressBtnNormal(key, targetProcess);
             else if (val == 2) MacroHelper.PressBtnShift(key, targetProcess);
             else if (val == 3) MacroHelper.PressBtnCtrl(key, targetProcess);
@@ -531,20 +536,27 @@ namespace ArchlordMessenger
                             {
                                 if (!cbNewBar.Checked)
                                 {
-                                    while (MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2), YHeight + row1YOffsets[MacroProgress])))
-                                    {
-                                        this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes[MacroProgress], delay)));
-                                    }
-                                }
+									while (MacroProgress != 999 && MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2), YHeight + row1YOffsets[MacroProgress])))
+									{
+										if (MacroProgress != 999)
+										{
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay)));
+										}
+									}
+								}
                                 else
                                 {
-                                    int offset = 0;
-                                    if ((int)Row1BarNum.Value > 1 && row1Indexes[MacroProgress] >= 5) offset = -1;
-                                    while (MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum.Value))))
-                                    {
-                                        this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes[MacroProgress], delay)));
-                                    }
-                                }
+									int offset = 0;
+									if ((int)Row1BarNum.Value > 1 && row1Indexes[MacroProgress] >= 5) offset = -1;
+									while (MacroProgress != 999 && MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum.Value))))
+									{
+										if (MacroProgress != 999)
+										{
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay)));
+
+										}
+									}
+								}
                             }
                         }
                         if (row2Indexes.Count > 0)
