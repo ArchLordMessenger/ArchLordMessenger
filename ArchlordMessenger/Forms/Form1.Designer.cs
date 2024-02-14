@@ -1010,8 +1010,9 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::ArchlordMessenger.Properties.Resources.ArchlordMessenger;
-			this.ClientSize = new System.Drawing.Size(1026, 579);
+			this.BackgroundImage = global::ArchlordMessenger.Properties.Resources.form11;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.ClientSize = new System.Drawing.Size(1024, 576);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.cbSwitch);
 			this.Controls.Add(this.cbNewBar);
@@ -1103,6 +1104,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.txtStartBar);
 			this.Controls.Add(this.label2);
+			this.DoubleBuffered = true;
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
