@@ -63,9 +63,29 @@ namespace ArchlordMessenger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap form1 {
+            get {
+                object obj = ResourceManager.GetObject("form1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap form11 {
             get {
                 object obj = ResourceManager.GetObject("form11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainform {
+            get {
+                object obj = ResourceManager.GetObject("mainform", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
