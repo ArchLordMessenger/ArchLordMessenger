@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\ArchlordMessenger.png" />
+    <Content Include="Resources\button.png" />
     <Content Include="Resources\mainform.jpg" />
     <None Include="Resources\form1.JPG" />
     <None Include="Resources\form11.JPG" />
