@@ -2,6 +2,9 @@
 
 Welcome to the ArchLordInfinityMacro repository! This tool is designed to enhance your gaming experience by enabling macros for Archlord, specifically tailored for the Archonia server. With this tool, you can automate repetitive tasks, optimize your gameplay, and improve your efficiency in the world of Archlord.
 
+## Download
+You can download the latest release [here](https://github.com/ArchlordInfinityMacro/ArchLordInfinityMacro/releases/tag/20240216).
+
 ## How to Use
 To start the macro, press F2.
 Ensure that skills must be on cooldown on the first time pressing F2.
