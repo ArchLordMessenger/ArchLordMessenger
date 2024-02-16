@@ -1,4 +1,4 @@
-﻿namespace ArchlordMessenger
+﻿namespace ArchlordInfinityMacro
 {
     partial class ColorPicker
     {

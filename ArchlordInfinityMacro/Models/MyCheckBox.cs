@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ArchlordMessenger
+namespace ArchlordInfinityMacro
 {
     public class MyCheckBox : CheckBox
     {

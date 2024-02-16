@@ -1,4 +1,4 @@
-﻿namespace ArchlordMessenger
+﻿namespace ArchlordInfinityMacro
 {
     partial class Form1
     {
@@ -86,26 +86,26 @@
 			this.btn_minimaze = new System.Windows.Forms.Button();
 			this.btn_settings = new System.Windows.Forms.Button();
 			this.listBox_ServerSelect = new System.Windows.Forms.ListBox();
-			this.Row2Skill10 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill9 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill8 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill7 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill6 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill5 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill4 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill3 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill2 = new ArchlordMessenger.MyCheckBox();
-			this.Row2Skill1 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill10 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill9 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill8 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill7 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill6 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill5 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill4 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill3 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill2 = new ArchlordMessenger.MyCheckBox();
-			this.Row1Skill1 = new ArchlordMessenger.MyCheckBox();
+			this.Row2Skill10 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill9 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill8 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill7 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill6 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill5 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill4 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill3 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill2 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row2Skill1 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill10 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill9 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill8 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill7 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill6 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill5 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill4 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill3 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill2 = new ArchlordInfinityMacro.MyCheckBox();
+			this.Row1Skill1 = new ArchlordInfinityMacro.MyCheckBox();
 			this.tab_Offsets.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -931,7 +931,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::ArchlordMessenger.Properties.Resources.mainform;
+			this.BackgroundImage = global::ArchlordInfinityMacro.Properties.Resources.mainform;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.ClientSize = new System.Drawing.Size(1024, 575);
 			this.Controls.Add(this.listBox_ServerSelect);

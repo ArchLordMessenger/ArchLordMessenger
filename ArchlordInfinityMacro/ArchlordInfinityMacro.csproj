@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8721C848-B5D7-4D38-9908-E209107C1C5E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ArchlordMessenger</RootNamespace>
-    <AssemblyName>ArchlordMessenger</AssemblyName>
+    <RootNamespace>ArchlordInfinityMacro</RootNamespace>
+    <AssemblyName>ArchlordInfinityMacro</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -145,7 +145,6 @@
     <Content Include="Resources\AIM.ico" />
     <Content Include="Resources\button.png" />
     <Content Include="Resources\mainform.jpg" />
-    <Content Include="tag_attack.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

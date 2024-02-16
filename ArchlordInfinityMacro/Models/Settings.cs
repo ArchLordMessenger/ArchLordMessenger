@@ -1,4 +1,4 @@
-﻿namespace ArchlordMessenger
+﻿namespace ArchlordInfinityMacro
 {
 	using System.Collections.Generic;
 

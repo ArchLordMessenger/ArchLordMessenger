@@ -14,7 +14,7 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace ArchlordMessenger
+namespace ArchlordInfinityMacro
 {
 	public partial class Form1 : Form
 	{
@@ -688,7 +688,7 @@ namespace ArchlordMessenger
 
 		private void btn_help_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("https://github.com/ArchLordMessenger");
+			MessageBox.Show("https://github.com/ArchlordInfinityMacro");
 		}
 
 

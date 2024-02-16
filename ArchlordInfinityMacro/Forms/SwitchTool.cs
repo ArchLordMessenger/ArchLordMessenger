@@ -7,7 +7,7 @@ using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ArchlordMessenger
+namespace ArchlordInfinityMacro
 {
     public partial class SwitchTool : Form
     {
