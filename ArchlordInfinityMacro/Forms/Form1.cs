@@ -204,6 +204,7 @@ namespace ArchlordInfinityMacro
 						{
 							//on
 							//this.SetSkillsEnabled(false);
+
 							picbox_running_off.Visible = false;
 							picbox_running_on.Visible = true;
 							Macro();
@@ -582,12 +583,13 @@ namespace ArchlordInfinityMacro
 								{
 									int offset = 0;
 									if ((int)Row1BarNum_Value > 1 && row1Indexes[MacroProgress] >= 5) offset = -1;
-									while (MacroProgress != 999 && MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset, YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value))))
+									var x = baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset;
+									var y = YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value);
+									while (MacroProgress != 999 && MacroHelper.IsColorsEqual(row1PixelList[MacroProgress], GetPixelColorSimplified(targetProcess, x, y)))
 									{
 										if (MacroProgress != 999)
 										{
-											var x = baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset;
-											var y = YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value);
+
 											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay, $"x={x},y={y}")));
 
 										}
@@ -689,16 +691,26 @@ namespace ArchlordInfinityMacro
 		private void btn_ShowLogs_Click(object sender, EventArgs e)
 		{
 			LOGGING.Visible = !LOGGING.Visible;
-			picbox_focused_off.Visible = !picbox_focused_off.Visible;
-			picbox_focused_on.Visible = !picbox_focused_on.Visible;
+			//picbox_focused_off.Visible = !picbox_focused_off.Visible;
+			//picbox_focused_on.Visible = !picbox_focused_on.Visible;
 
 		}
 
 		private void Log(string log)
 		{
+			const int max_lines = 100;
 			LOGGING.Text += $"[{DateTime.Now.ToString("mm:ss.fff")}]: {log}\n";
+
+			if (LOGGING.Lines.Length > max_lines)
+			{
+				string[] newLines = new string[max_lines];
+				Array.Copy(LOGGING.Lines, 1, newLines, 0, max_lines);
+				LOGGING.Lines = newLines;
+			}
+
 			LOGGING.SelectionStart = LOGGING.TextLength;
 			LOGGING.ScrollToCaret();
+
 
 
 		}
@@ -764,8 +776,8 @@ namespace ArchlordInfinityMacro
 
 		private void picbox_focused_Click(object sender, EventArgs e)
 		{
-			
-				
+
+
 
 		}
 
