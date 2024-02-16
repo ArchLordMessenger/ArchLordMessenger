@@ -133,8 +133,9 @@ namespace ArchlordMessenger
 			//Row3Skill9.Checked = state.Row1 != null && state.Row3[8];
 			//Row3Skill10.Checked = state.Row1 != null && state.Row3[9];
 
-		}
 
+			listBox_ServerSelect.SelectedItem = listBox_ServerSelect.Items[0];
+		}
 		private void loadConfig()
 		{
 			try
@@ -225,7 +226,7 @@ namespace ArchlordMessenger
 				return;
 			}
 
-			IntPtr procHandle =focusedClients.FirstOrDefault().MainWindowHandle;
+			IntPtr procHandle = focusedClients.FirstOrDefault().MainWindowHandle;
 
 			if (procHandle == targetProcess)
 			{
@@ -485,7 +486,7 @@ namespace ArchlordMessenger
 			if (val == 1) MacroHelper.PressBtnNormal(key, targetProcess);
 			else if (val == 2) MacroHelper.PressBtnShift(key, targetProcess);
 			else if (val == 3) MacroHelper.PressBtnCtrl(key, targetProcess);
-			this.Log($"pressed {++key} on position {position}" );
+			this.Log($"pressed {++key} on position {position}");
 			Thread.Sleep(delay);
 		}
 		private void ProcessMacroEntryBar2(int key, int delay)
@@ -544,7 +545,7 @@ namespace ArchlordMessenger
 										{
 											var x = baseX + row1XOffsets[MacroProgress] + (row1Indexes[MacroProgress] * 50) + (row1Indexes[MacroProgress] * 2) + offset;
 											var y = YHeight + row1YOffsets[MacroProgress] + MacroHelper.GetYOffsetFromBar((int)Row1BarNum_Value);
-											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay,$"x={x},y={y}")));
+											this.Invoke(new ThreadStart(() => ProcessMacroEntryBar1(row1Indexes, MacroProgress, delay, $"x={x},y={y}")));
 
 										}
 									}
@@ -629,7 +630,7 @@ namespace ArchlordMessenger
 		private void SetWindowTitle()
 		{
 			Random rnd = new Random();
-			this.Text = new string(Enumerable.Repeat("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", 20).Select(s => s[rnd.Next(s.Length)]).ToArray());
+			this.Text = "AIM.exe";
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -653,7 +654,7 @@ namespace ArchlordMessenger
 			LOGGING.SelectionStart = LOGGING.TextLength;
 			LOGGING.ScrollToCaret();
 
-			
+
 		}
 
 		private void btn_settings_Click(object sender, EventArgs e)
@@ -665,7 +666,13 @@ namespace ArchlordMessenger
 
 		private void btn_close_Click(object sender, EventArgs e)
 		{
-			this.Log("closed client");
+			var processes = Process.GetProcessesByName(processName);
+			foreach (var process in processes)
+			{
+				process.Kill();
+			}
+
+			this.Log($"Killed {processes.Count()} processes named {processName}.exe.");
 		}
 
 		private void btn_minimaze_Click(object sender, EventArgs e)
@@ -677,6 +684,27 @@ namespace ArchlordMessenger
 		private void btn_exit_Click(object sender, EventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void btn_help_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("https://github.com/ArchLordMessenger");
+		}
+
+
+		public const int WM_NCLBUTTONDOWN = 0xA1;
+		public const int HT_CAPTION = 0x2;
+		[System.Runtime.InteropServices.DllImport("user32.dll")]
+		public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+		[System.Runtime.InteropServices.DllImport("user32.dll")]
+		public static extern bool ReleaseCapture();
+		private void Form1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Left)
+			{
+				ReleaseCapture();
+				SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+			}
 		}
 	}
 }

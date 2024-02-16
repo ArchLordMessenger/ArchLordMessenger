@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.label14 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
@@ -77,6 +78,14 @@
 			this.tab_Offsets = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.btn_close = new System.Windows.Forms.Button();
+			this.btn_ShowLogs = new System.Windows.Forms.Button();
+			this.LOGGING = new System.Windows.Forms.RichTextBox();
+			this.btn_exit = new System.Windows.Forms.Button();
+			this.btn_help = new System.Windows.Forms.Button();
+			this.btn_minimaze = new System.Windows.Forms.Button();
+			this.btn_settings = new System.Windows.Forms.Button();
+			this.listBox_ServerSelect = new System.Windows.Forms.ListBox();
 			this.Row2Skill10 = new ArchlordMessenger.MyCheckBox();
 			this.Row2Skill9 = new ArchlordMessenger.MyCheckBox();
 			this.Row2Skill8 = new ArchlordMessenger.MyCheckBox();
@@ -97,14 +106,6 @@
 			this.Row1Skill3 = new ArchlordMessenger.MyCheckBox();
 			this.Row1Skill2 = new ArchlordMessenger.MyCheckBox();
 			this.Row1Skill1 = new ArchlordMessenger.MyCheckBox();
-			this.btn_close = new System.Windows.Forms.Button();
-			this.btn_ShowLogs = new System.Windows.Forms.Button();
-			this.LOGGING = new System.Windows.Forms.RichTextBox();
-			this.btn_exit = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.btn_minimaze = new System.Windows.Forms.Button();
-			this.btn_settings = new System.Windows.Forms.Button();
-			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.tab_Offsets.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -603,209 +604,10 @@
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// Row2Skill10
-			// 
-			this.Row2Skill10.Location = new System.Drawing.Point(746, 470);
-			this.Row2Skill10.Name = "Row2Skill10";
-			this.Row2Skill10.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill10.TabIndex = 46;
-			this.Row2Skill10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill10.UseVisualStyleBackColor = true;
-			this.Row2Skill10.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill9
-			// 
-			this.Row2Skill9.Location = new System.Drawing.Point(695, 470);
-			this.Row2Skill9.Name = "Row2Skill9";
-			this.Row2Skill9.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill9.TabIndex = 45;
-			this.Row2Skill9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill9.UseVisualStyleBackColor = true;
-			this.Row2Skill9.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill8
-			// 
-			this.Row2Skill8.Location = new System.Drawing.Point(644, 470);
-			this.Row2Skill8.Name = "Row2Skill8";
-			this.Row2Skill8.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill8.TabIndex = 44;
-			this.Row2Skill8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill8.UseVisualStyleBackColor = true;
-			this.Row2Skill8.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill7
-			// 
-			this.Row2Skill7.Location = new System.Drawing.Point(593, 470);
-			this.Row2Skill7.Name = "Row2Skill7";
-			this.Row2Skill7.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill7.TabIndex = 43;
-			this.Row2Skill7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill7.UseVisualStyleBackColor = true;
-			this.Row2Skill7.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill6
-			// 
-			this.Row2Skill6.Location = new System.Drawing.Point(542, 470);
-			this.Row2Skill6.Name = "Row2Skill6";
-			this.Row2Skill6.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill6.TabIndex = 42;
-			this.Row2Skill6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill6.UseVisualStyleBackColor = true;
-			this.Row2Skill6.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill5
-			// 
-			this.Row2Skill5.Location = new System.Drawing.Point(491, 470);
-			this.Row2Skill5.Name = "Row2Skill5";
-			this.Row2Skill5.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill5.TabIndex = 41;
-			this.Row2Skill5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill5.UseVisualStyleBackColor = true;
-			this.Row2Skill5.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill4
-			// 
-			this.Row2Skill4.Location = new System.Drawing.Point(440, 470);
-			this.Row2Skill4.Name = "Row2Skill4";
-			this.Row2Skill4.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill4.TabIndex = 40;
-			this.Row2Skill4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill4.UseVisualStyleBackColor = true;
-			this.Row2Skill4.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill3
-			// 
-			this.Row2Skill3.Location = new System.Drawing.Point(389, 470);
-			this.Row2Skill3.Name = "Row2Skill3";
-			this.Row2Skill3.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill3.TabIndex = 39;
-			this.Row2Skill3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill3.UseVisualStyleBackColor = true;
-			this.Row2Skill3.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill2
-			// 
-			this.Row2Skill2.Location = new System.Drawing.Point(338, 470);
-			this.Row2Skill2.Name = "Row2Skill2";
-			this.Row2Skill2.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill2.TabIndex = 38;
-			this.Row2Skill2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill2.UseVisualStyleBackColor = true;
-			this.Row2Skill2.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row2Skill1
-			// 
-			this.Row2Skill1.Location = new System.Drawing.Point(287, 470);
-			this.Row2Skill1.Name = "Row2Skill1";
-			this.Row2Skill1.Size = new System.Drawing.Size(47, 47);
-			this.Row2Skill1.TabIndex = 37;
-			this.Row2Skill1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row2Skill1.UseVisualStyleBackColor = true;
-			this.Row2Skill1.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill10
-			// 
-			this.Row1Skill10.Location = new System.Drawing.Point(746, 521);
-			this.Row1Skill10.Name = "Row1Skill10";
-			this.Row1Skill10.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill10.TabIndex = 36;
-			this.Row1Skill10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill10.UseVisualStyleBackColor = true;
-			this.Row1Skill10.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill9
-			// 
-			this.Row1Skill9.Location = new System.Drawing.Point(695, 521);
-			this.Row1Skill9.Name = "Row1Skill9";
-			this.Row1Skill9.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill9.TabIndex = 35;
-			this.Row1Skill9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill9.UseVisualStyleBackColor = true;
-			this.Row1Skill9.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill8
-			// 
-			this.Row1Skill8.Location = new System.Drawing.Point(644, 521);
-			this.Row1Skill8.Name = "Row1Skill8";
-			this.Row1Skill8.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill8.TabIndex = 34;
-			this.Row1Skill8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill8.UseVisualStyleBackColor = true;
-			this.Row1Skill8.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill7
-			// 
-			this.Row1Skill7.Location = new System.Drawing.Point(593, 521);
-			this.Row1Skill7.Name = "Row1Skill7";
-			this.Row1Skill7.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill7.TabIndex = 33;
-			this.Row1Skill7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill7.UseVisualStyleBackColor = true;
-			this.Row1Skill7.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill6
-			// 
-			this.Row1Skill6.Location = new System.Drawing.Point(542, 521);
-			this.Row1Skill6.Name = "Row1Skill6";
-			this.Row1Skill6.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill6.TabIndex = 32;
-			this.Row1Skill6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill6.UseVisualStyleBackColor = true;
-			this.Row1Skill6.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill5
-			// 
-			this.Row1Skill5.Location = new System.Drawing.Point(491, 521);
-			this.Row1Skill5.Name = "Row1Skill5";
-			this.Row1Skill5.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill5.TabIndex = 31;
-			this.Row1Skill5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill5.UseVisualStyleBackColor = true;
-			this.Row1Skill5.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill4
-			// 
-			this.Row1Skill4.Location = new System.Drawing.Point(440, 521);
-			this.Row1Skill4.Name = "Row1Skill4";
-			this.Row1Skill4.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill4.TabIndex = 30;
-			this.Row1Skill4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill4.UseVisualStyleBackColor = true;
-			this.Row1Skill4.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill3
-			// 
-			this.Row1Skill3.Location = new System.Drawing.Point(389, 521);
-			this.Row1Skill3.Name = "Row1Skill3";
-			this.Row1Skill3.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill3.TabIndex = 29;
-			this.Row1Skill3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill3.UseVisualStyleBackColor = true;
-			this.Row1Skill3.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill2
-			// 
-			this.Row1Skill2.Location = new System.Drawing.Point(338, 521);
-			this.Row1Skill2.Name = "Row1Skill2";
-			this.Row1Skill2.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill2.TabIndex = 28;
-			this.Row1Skill2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill2.UseVisualStyleBackColor = true;
-			this.Row1Skill2.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
-			// Row1Skill1
-			// 
-			this.Row1Skill1.Location = new System.Drawing.Point(287, 521);
-			this.Row1Skill1.Name = "Row1Skill1";
-			this.Row1Skill1.Size = new System.Drawing.Size(47, 47);
-			this.Row1Skill1.TabIndex = 27;
-			this.Row1Skill1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Row1Skill1.UseVisualStyleBackColor = true;
-			this.Row1Skill1.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
-			// 
 			// btn_close
 			// 
 			this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(74)))), ((int)(((byte)(65)))));
+			this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btn_close.Location = new System.Drawing.Point(185, 21);
 			this.btn_close.Name = "btn_close";
@@ -818,6 +620,7 @@
 			// btn_ShowLogs
 			// 
 			this.btn_ShowLogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(74)))), ((int)(((byte)(65)))));
+			this.btn_ShowLogs.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_ShowLogs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btn_ShowLogs.Location = new System.Drawing.Point(296, 22);
 			this.btn_ShowLogs.Name = "btn_ShowLogs";
@@ -842,6 +645,7 @@
 			// btn_exit
 			// 
 			this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+			this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_exit.ForeColor = System.Drawing.Color.Black;
 			this.btn_exit.Location = new System.Drawing.Point(961, 15);
 			this.btn_exit.Name = "btn_exit";
@@ -850,22 +654,25 @@
 			this.btn_exit.UseVisualStyleBackColor = false;
 			this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
 			// 
-			// button2
+			// btn_help
 			// 
-			this.button2.BackColor = System.Drawing.Color.Transparent;
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.ForeColor = System.Drawing.Color.Transparent;
-			this.button2.Location = new System.Drawing.Point(915, 15);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(40, 40);
-			this.button2.TabIndex = 119;
-			this.button2.Text = "?";
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button2.UseVisualStyleBackColor = false;
+			this.btn_help.BackColor = System.Drawing.Color.Transparent;
+			this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_help.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn_help.ForeColor = System.Drawing.Color.Transparent;
+			this.btn_help.Location = new System.Drawing.Point(915, 15);
+			this.btn_help.Name = "btn_help";
+			this.btn_help.Size = new System.Drawing.Size(40, 40);
+			this.btn_help.TabIndex = 119;
+			this.btn_help.Text = "?";
+			this.btn_help.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btn_help.UseVisualStyleBackColor = false;
+			this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
 			// 
 			// btn_minimaze
 			// 
 			this.btn_minimaze.BackColor = System.Drawing.Color.Transparent;
+			this.btn_minimaze.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_minimaze.ForeColor = System.Drawing.Color.Black;
 			this.btn_minimaze.Location = new System.Drawing.Point(869, 15);
 			this.btn_minimaze.Name = "btn_minimaze";
@@ -877,6 +684,7 @@
 			// btn_settings
 			// 
 			this.btn_settings.BackColor = System.Drawing.Color.Transparent;
+			this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_settings.ForeColor = System.Drawing.Color.Black;
 			this.btn_settings.Location = new System.Drawing.Point(823, 15);
 			this.btn_settings.Name = "btn_settings";
@@ -885,18 +693,239 @@
 			this.btn_settings.UseVisualStyleBackColor = false;
 			this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
 			// 
-			// listBox1
+			// listBox_ServerSelect
 			// 
-			this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(74)))), ((int)(((byte)(65)))));
-			this.listBox1.ForeColor = System.Drawing.SystemColors.Window;
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.Items.AddRange(new object[] {
+			this.listBox_ServerSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(74)))), ((int)(((byte)(65)))));
+			this.listBox_ServerSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.listBox_ServerSelect.ForeColor = System.Drawing.SystemColors.Window;
+			this.listBox_ServerSelect.FormattingEnabled = true;
+			this.listBox_ServerSelect.Items.AddRange(new object[] {
             "Archonia (1600x900)",
             "Custom   (1600x900)"});
-			this.listBox1.Location = new System.Drawing.Point(18, 15);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(135, 43);
-			this.listBox1.TabIndex = 122;
+			this.listBox_ServerSelect.Location = new System.Drawing.Point(18, 15);
+			this.listBox_ServerSelect.Name = "listBox_ServerSelect";
+			this.listBox_ServerSelect.Size = new System.Drawing.Size(135, 43);
+			this.listBox_ServerSelect.TabIndex = 122;
+			// 
+			// Row2Skill10
+			// 
+			this.Row2Skill10.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill10.Location = new System.Drawing.Point(746, 470);
+			this.Row2Skill10.Name = "Row2Skill10";
+			this.Row2Skill10.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill10.TabIndex = 46;
+			this.Row2Skill10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill10.UseVisualStyleBackColor = true;
+			this.Row2Skill10.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill9
+			// 
+			this.Row2Skill9.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill9.Location = new System.Drawing.Point(695, 470);
+			this.Row2Skill9.Name = "Row2Skill9";
+			this.Row2Skill9.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill9.TabIndex = 45;
+			this.Row2Skill9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill9.UseVisualStyleBackColor = true;
+			this.Row2Skill9.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill8
+			// 
+			this.Row2Skill8.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill8.Location = new System.Drawing.Point(644, 470);
+			this.Row2Skill8.Name = "Row2Skill8";
+			this.Row2Skill8.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill8.TabIndex = 44;
+			this.Row2Skill8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill8.UseVisualStyleBackColor = true;
+			this.Row2Skill8.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill7
+			// 
+			this.Row2Skill7.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill7.Location = new System.Drawing.Point(593, 470);
+			this.Row2Skill7.Name = "Row2Skill7";
+			this.Row2Skill7.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill7.TabIndex = 43;
+			this.Row2Skill7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill7.UseVisualStyleBackColor = true;
+			this.Row2Skill7.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill6
+			// 
+			this.Row2Skill6.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill6.Location = new System.Drawing.Point(542, 470);
+			this.Row2Skill6.Name = "Row2Skill6";
+			this.Row2Skill6.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill6.TabIndex = 42;
+			this.Row2Skill6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill6.UseVisualStyleBackColor = true;
+			this.Row2Skill6.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill5
+			// 
+			this.Row2Skill5.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill5.Location = new System.Drawing.Point(491, 470);
+			this.Row2Skill5.Name = "Row2Skill5";
+			this.Row2Skill5.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill5.TabIndex = 41;
+			this.Row2Skill5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill5.UseVisualStyleBackColor = true;
+			this.Row2Skill5.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill4
+			// 
+			this.Row2Skill4.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill4.Location = new System.Drawing.Point(440, 470);
+			this.Row2Skill4.Name = "Row2Skill4";
+			this.Row2Skill4.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill4.TabIndex = 40;
+			this.Row2Skill4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill4.UseVisualStyleBackColor = true;
+			this.Row2Skill4.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill3
+			// 
+			this.Row2Skill3.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill3.Location = new System.Drawing.Point(389, 470);
+			this.Row2Skill3.Name = "Row2Skill3";
+			this.Row2Skill3.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill3.TabIndex = 39;
+			this.Row2Skill3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill3.UseVisualStyleBackColor = true;
+			this.Row2Skill3.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill2
+			// 
+			this.Row2Skill2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill2.Location = new System.Drawing.Point(338, 470);
+			this.Row2Skill2.Name = "Row2Skill2";
+			this.Row2Skill2.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill2.TabIndex = 38;
+			this.Row2Skill2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill2.UseVisualStyleBackColor = true;
+			this.Row2Skill2.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row2Skill1
+			// 
+			this.Row2Skill1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row2Skill1.Location = new System.Drawing.Point(287, 470);
+			this.Row2Skill1.Name = "Row2Skill1";
+			this.Row2Skill1.Size = new System.Drawing.Size(47, 47);
+			this.Row2Skill1.TabIndex = 37;
+			this.Row2Skill1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row2Skill1.UseVisualStyleBackColor = true;
+			this.Row2Skill1.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill10
+			// 
+			this.Row1Skill10.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill10.Location = new System.Drawing.Point(746, 521);
+			this.Row1Skill10.Name = "Row1Skill10";
+			this.Row1Skill10.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill10.TabIndex = 36;
+			this.Row1Skill10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill10.UseVisualStyleBackColor = true;
+			this.Row1Skill10.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill9
+			// 
+			this.Row1Skill9.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill9.Location = new System.Drawing.Point(695, 521);
+			this.Row1Skill9.Name = "Row1Skill9";
+			this.Row1Skill9.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill9.TabIndex = 35;
+			this.Row1Skill9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill9.UseVisualStyleBackColor = true;
+			this.Row1Skill9.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill8
+			// 
+			this.Row1Skill8.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill8.Location = new System.Drawing.Point(644, 521);
+			this.Row1Skill8.Name = "Row1Skill8";
+			this.Row1Skill8.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill8.TabIndex = 34;
+			this.Row1Skill8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill8.UseVisualStyleBackColor = true;
+			this.Row1Skill8.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill7
+			// 
+			this.Row1Skill7.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill7.Location = new System.Drawing.Point(593, 521);
+			this.Row1Skill7.Name = "Row1Skill7";
+			this.Row1Skill7.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill7.TabIndex = 33;
+			this.Row1Skill7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill7.UseVisualStyleBackColor = true;
+			this.Row1Skill7.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill6
+			// 
+			this.Row1Skill6.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill6.Location = new System.Drawing.Point(542, 521);
+			this.Row1Skill6.Name = "Row1Skill6";
+			this.Row1Skill6.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill6.TabIndex = 32;
+			this.Row1Skill6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill6.UseVisualStyleBackColor = true;
+			this.Row1Skill6.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill5
+			// 
+			this.Row1Skill5.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill5.Location = new System.Drawing.Point(491, 521);
+			this.Row1Skill5.Name = "Row1Skill5";
+			this.Row1Skill5.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill5.TabIndex = 31;
+			this.Row1Skill5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill5.UseVisualStyleBackColor = true;
+			this.Row1Skill5.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill4
+			// 
+			this.Row1Skill4.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill4.Location = new System.Drawing.Point(440, 521);
+			this.Row1Skill4.Name = "Row1Skill4";
+			this.Row1Skill4.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill4.TabIndex = 30;
+			this.Row1Skill4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill4.UseVisualStyleBackColor = true;
+			this.Row1Skill4.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill3
+			// 
+			this.Row1Skill3.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill3.Location = new System.Drawing.Point(389, 521);
+			this.Row1Skill3.Name = "Row1Skill3";
+			this.Row1Skill3.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill3.TabIndex = 29;
+			this.Row1Skill3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill3.UseVisualStyleBackColor = true;
+			this.Row1Skill3.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill2
+			// 
+			this.Row1Skill2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill2.Location = new System.Drawing.Point(338, 521);
+			this.Row1Skill2.Name = "Row1Skill2";
+			this.Row1Skill2.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill2.TabIndex = 28;
+			this.Row1Skill2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill2.UseVisualStyleBackColor = true;
+			this.Row1Skill2.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
+			// 
+			// Row1Skill1
+			// 
+			this.Row1Skill1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Row1Skill1.Location = new System.Drawing.Point(287, 521);
+			this.Row1Skill1.Name = "Row1Skill1";
+			this.Row1Skill1.Size = new System.Drawing.Size(47, 47);
+			this.Row1Skill1.TabIndex = 27;
+			this.Row1Skill1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Row1Skill1.UseVisualStyleBackColor = true;
+			this.Row1Skill1.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
 			// 
 			// Form1
 			// 
@@ -905,10 +934,10 @@
 			this.BackgroundImage = global::ArchlordMessenger.Properties.Resources.mainform;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.ClientSize = new System.Drawing.Size(1024, 575);
-			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.listBox_ServerSelect);
 			this.Controls.Add(this.btn_settings);
 			this.Controls.Add(this.btn_minimaze);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.btn_help);
 			this.Controls.Add(this.btn_exit);
 			this.Controls.Add(this.LOGGING);
 			this.Controls.Add(this.btn_ShowLogs);
@@ -937,11 +966,13 @@
 			this.Controls.Add(this.Row1Skill2);
 			this.Controls.Add(this.Row1Skill1);
 			this.DoubleBuffered = true;
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
 			this.tab_Offsets.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
@@ -1025,10 +1056,10 @@
 		private System.Windows.Forms.Button btn_ShowLogs;
 		private System.Windows.Forms.RichTextBox LOGGING;
 		private System.Windows.Forms.Button btn_exit;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button btn_help;
 		private System.Windows.Forms.Button btn_minimaze;
 		private System.Windows.Forms.Button btn_settings;
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.ListBox listBox_ServerSelect;
 	}
 }
 
