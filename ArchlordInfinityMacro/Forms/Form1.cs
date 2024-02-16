@@ -183,6 +183,11 @@ namespace ArchlordInfinityMacro
 					case 1:
 						if (bRepeat)
 						{
+							//off
+							//this.SetSkillsEnabled(true);
+							picbox_running_off.Visible = true;
+							picbox_running_on.Visible = false;
+
 							bRepeat = false;
 							MacroProgress = 999;
 							if (!cbNewBar_Checked)
@@ -197,6 +202,10 @@ namespace ArchlordInfinityMacro
 						}
 						else
 						{
+							//on
+							//this.SetSkillsEnabled(false);
+							picbox_running_off.Visible = false;
+							picbox_running_on.Visible = true;
 							Macro();
 						}
 						break;
@@ -206,7 +215,30 @@ namespace ArchlordInfinityMacro
 
 			base.WndProc(ref m);
 		}
+		private void SetSkillsEnabled(bool Enabled)
+		{
+			Row1Skill1.Enabled = Enabled;
+			Row1Skill2.Enabled = Enabled;
+			Row1Skill3.Enabled = Enabled;
+			Row1Skill4.Enabled = Enabled;
+			Row1Skill5.Enabled = Enabled;
+			Row1Skill6.Enabled = Enabled;
+			Row1Skill7.Enabled = Enabled;
+			Row1Skill8.Enabled = Enabled;
+			Row1Skill9.Enabled = Enabled;
+			Row1Skill10.Enabled = Enabled;
 
+			Row2Skill1.Enabled = Enabled;
+			Row2Skill2.Enabled = Enabled;
+			Row2Skill3.Enabled = Enabled;
+			Row2Skill4.Enabled = Enabled;
+			Row2Skill5.Enabled = Enabled;
+			Row2Skill6.Enabled = Enabled;
+			Row2Skill7.Enabled = Enabled;
+			Row2Skill8.Enabled = Enabled;
+			Row2Skill9.Enabled = Enabled;
+			Row2Skill10.Enabled = Enabled;
+		}
 		private void Macro()
 		{
 			InitMacroDefaults();
@@ -223,7 +255,18 @@ namespace ArchlordInfinityMacro
 			if (!focusedClients.Any())
 			{
 				this.Log("client is not focused.");
+				picbox_focused_off.Visible = true;
+				picbox_focused_on.Visible = false;
+
+				picbox_running_off.Visible = true;
+				picbox_running_on.Visible = false;
 				return;
+			}
+			else
+			{
+				picbox_focused_off.Visible = false;
+				picbox_focused_on.Visible = true;
+
 			}
 
 			IntPtr procHandle = focusedClients.FirstOrDefault().MainWindowHandle;
@@ -646,6 +689,9 @@ namespace ArchlordInfinityMacro
 		private void btn_ShowLogs_Click(object sender, EventArgs e)
 		{
 			LOGGING.Visible = !LOGGING.Visible;
+			picbox_focused_off.Visible = !picbox_focused_off.Visible;
+			picbox_focused_on.Visible = !picbox_focused_on.Visible;
+
 		}
 
 		private void Log(string log)
@@ -659,6 +705,8 @@ namespace ArchlordInfinityMacro
 
 		private void btn_settings_Click(object sender, EventArgs e)
 		{
+			this.Log("Settings are disabled in version 1.");
+			return;
 			tab_Offsets.Visible = !tab_Offsets.Visible;
 			btnDebug.Visible = !btnDebug.Visible;
 			btnSwitchOpen.Visible = !btnSwitchOpen.Visible;
@@ -688,7 +736,14 @@ namespace ArchlordInfinityMacro
 
 		private void btn_help_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("https://github.com/ArchlordInfinityMacro");
+			var help = "Help menu:\n";
+			help += "Press F2 to start\n";
+			help += "Skills must be on cooldown on first time F2\n";
+			help += "Only check skills u want to use (no auto attack or buffs)\n";
+			help += "Every time u change skills in game, restart macro\n";
+			help += "Report an issue ? https://github.com/ArchlordInfinityMacro";
+
+			MessageBox.Show(help);
 		}
 
 
@@ -705,6 +760,18 @@ namespace ArchlordInfinityMacro
 				ReleaseCapture();
 				SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
 			}
+		}
+
+		private void picbox_focused_Click(object sender, EventArgs e)
+		{
+			
+				
+
+		}
+
+		private void picbox_focused_off_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

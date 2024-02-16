@@ -106,9 +106,20 @@
 			this.Row1Skill3 = new ArchlordInfinityMacro.MyCheckBox();
 			this.Row1Skill2 = new ArchlordInfinityMacro.MyCheckBox();
 			this.Row1Skill1 = new ArchlordInfinityMacro.MyCheckBox();
+			this.picbox_focused_on = new System.Windows.Forms.PictureBox();
+			this.picbox_focused_off = new System.Windows.Forms.PictureBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.picbox_running_on = new System.Windows.Forms.PictureBox();
+			this.picbox_running_off = new System.Windows.Forms.PictureBox();
 			this.tab_Offsets.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_focused_on)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_focused_off)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_running_on)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_running_off)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label14
@@ -153,7 +164,7 @@
 			this.Row1Skill1X.Name = "Row1Skill1X";
 			this.Row1Skill1X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill1X.TabIndex = 63;
-			this.Row1Skill1X.Text = "0";
+			this.Row1Skill1X.Text = "-5";
 			this.Row1Skill1X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill1Y
@@ -171,7 +182,7 @@
 			this.Row1Skill2X.Name = "Row1Skill2X";
 			this.Row1Skill2X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill2X.TabIndex = 65;
-			this.Row1Skill2X.Text = "0";
+			this.Row1Skill2X.Text = "-5";
 			this.Row1Skill2X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill3X
@@ -180,7 +191,7 @@
 			this.Row1Skill3X.Name = "Row1Skill3X";
 			this.Row1Skill3X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill3X.TabIndex = 66;
-			this.Row1Skill3X.Text = "0";
+			this.Row1Skill3X.Text = "-5";
 			this.Row1Skill3X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill4X
@@ -189,7 +200,7 @@
 			this.Row1Skill4X.Name = "Row1Skill4X";
 			this.Row1Skill4X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill4X.TabIndex = 67;
-			this.Row1Skill4X.Text = "0";
+			this.Row1Skill4X.Text = "-5";
 			this.Row1Skill4X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill5X
@@ -198,7 +209,7 @@
 			this.Row1Skill5X.Name = "Row1Skill5X";
 			this.Row1Skill5X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill5X.TabIndex = 68;
-			this.Row1Skill5X.Text = "0";
+			this.Row1Skill5X.Text = "-5";
 			this.Row1Skill5X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill6X
@@ -207,7 +218,7 @@
 			this.Row1Skill6X.Name = "Row1Skill6X";
 			this.Row1Skill6X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill6X.TabIndex = 69;
-			this.Row1Skill6X.Text = "0";
+			this.Row1Skill6X.Text = "-5";
 			this.Row1Skill6X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill7X
@@ -216,7 +227,7 @@
 			this.Row1Skill7X.Name = "Row1Skill7X";
 			this.Row1Skill7X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill7X.TabIndex = 70;
-			this.Row1Skill7X.Text = "0";
+			this.Row1Skill7X.Text = "-5";
 			this.Row1Skill7X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill8X
@@ -225,7 +236,7 @@
 			this.Row1Skill8X.Name = "Row1Skill8X";
 			this.Row1Skill8X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill8X.TabIndex = 71;
-			this.Row1Skill8X.Text = "0";
+			this.Row1Skill8X.Text = "-5";
 			this.Row1Skill8X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill9X
@@ -234,7 +245,7 @@
 			this.Row1Skill9X.Name = "Row1Skill9X";
 			this.Row1Skill9X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill9X.TabIndex = 72;
-			this.Row1Skill9X.Text = "0";
+			this.Row1Skill9X.Text = "-5";
 			this.Row1Skill9X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill10X
@@ -243,7 +254,7 @@
 			this.Row1Skill10X.Name = "Row1Skill10X";
 			this.Row1Skill10X.Size = new System.Drawing.Size(20, 20);
 			this.Row1Skill10X.TabIndex = 73;
-			this.Row1Skill10X.Text = "0";
+			this.Row1Skill10X.Text = "-5";
 			this.Row1Skill10X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row1Skill2Y
@@ -414,7 +425,7 @@
 			this.Row2Skill10X.Name = "Row2Skill10X";
 			this.Row2Skill10X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill10X.TabIndex = 93;
-			this.Row2Skill10X.Text = "0";
+			this.Row2Skill10X.Text = "-5";
 			this.Row2Skill10X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill9X
@@ -423,7 +434,7 @@
 			this.Row2Skill9X.Name = "Row2Skill9X";
 			this.Row2Skill9X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill9X.TabIndex = 92;
-			this.Row2Skill9X.Text = "0";
+			this.Row2Skill9X.Text = "-5";
 			this.Row2Skill9X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill8X
@@ -432,7 +443,7 @@
 			this.Row2Skill8X.Name = "Row2Skill8X";
 			this.Row2Skill8X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill8X.TabIndex = 91;
-			this.Row2Skill8X.Text = "0";
+			this.Row2Skill8X.Text = "-5";
 			this.Row2Skill8X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill7X
@@ -441,7 +452,7 @@
 			this.Row2Skill7X.Name = "Row2Skill7X";
 			this.Row2Skill7X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill7X.TabIndex = 90;
-			this.Row2Skill7X.Text = "0";
+			this.Row2Skill7X.Text = "-5";
 			this.Row2Skill7X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill6X
@@ -450,7 +461,7 @@
 			this.Row2Skill6X.Name = "Row2Skill6X";
 			this.Row2Skill6X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill6X.TabIndex = 89;
-			this.Row2Skill6X.Text = "0";
+			this.Row2Skill6X.Text = "-5";
 			this.Row2Skill6X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill5X
@@ -459,7 +470,7 @@
 			this.Row2Skill5X.Name = "Row2Skill5X";
 			this.Row2Skill5X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill5X.TabIndex = 88;
-			this.Row2Skill5X.Text = "0";
+			this.Row2Skill5X.Text = "-5";
 			this.Row2Skill5X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill4X
@@ -468,7 +479,7 @@
 			this.Row2Skill4X.Name = "Row2Skill4X";
 			this.Row2Skill4X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill4X.TabIndex = 87;
-			this.Row2Skill4X.Text = "0";
+			this.Row2Skill4X.Text = "-5";
 			this.Row2Skill4X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill3X
@@ -477,7 +488,7 @@
 			this.Row2Skill3X.Name = "Row2Skill3X";
 			this.Row2Skill3X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill3X.TabIndex = 86;
-			this.Row2Skill3X.Text = "0";
+			this.Row2Skill3X.Text = "-5";
 			this.Row2Skill3X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill2X
@@ -486,7 +497,7 @@
 			this.Row2Skill2X.Name = "Row2Skill2X";
 			this.Row2Skill2X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill2X.TabIndex = 85;
-			this.Row2Skill2X.Text = "0";
+			this.Row2Skill2X.Text = "-5";
 			this.Row2Skill2X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// Row2Skill1Y
@@ -504,7 +515,7 @@
 			this.Row2Skill1X.Name = "Row2Skill1X";
 			this.Row2Skill1X.Size = new System.Drawing.Size(20, 20);
 			this.Row2Skill1X.TabIndex = 83;
-			this.Row2Skill1X.Text = "0";
+			this.Row2Skill1X.Text = "-5";
 			this.Row2Skill1X.TextChanged += new System.EventHandler(this.Row1Skill1X_TextChanged);
 			// 
 			// btnDebug
@@ -700,8 +711,7 @@
 			this.listBox_ServerSelect.ForeColor = System.Drawing.SystemColors.Window;
 			this.listBox_ServerSelect.FormattingEnabled = true;
 			this.listBox_ServerSelect.Items.AddRange(new object[] {
-            "Archonia (1600x900)",
-            "Custom   (1600x900)"});
+            "Archonia (1600x900)"});
 			this.listBox_ServerSelect.Location = new System.Drawing.Point(18, 15);
 			this.listBox_ServerSelect.Name = "listBox_ServerSelect";
 			this.listBox_ServerSelect.Size = new System.Drawing.Size(135, 43);
@@ -927,6 +937,87 @@
 			this.Row1Skill1.UseVisualStyleBackColor = true;
 			this.Row1Skill1.CheckedChanged += new System.EventHandler(this.Row2Skill1_CheckedChanged);
 			// 
+			// picbox_focused_on
+			// 
+			this.picbox_focused_on.BackColor = System.Drawing.Color.Transparent;
+			this.picbox_focused_on.Image = global::ArchlordInfinityMacro.Properties.Resources.on;
+			this.picbox_focused_on.Location = new System.Drawing.Point(826, 538);
+			this.picbox_focused_on.Name = "picbox_focused_on";
+			this.picbox_focused_on.Size = new System.Drawing.Size(55, 25);
+			this.picbox_focused_on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.picbox_focused_on.TabIndex = 123;
+			this.picbox_focused_on.TabStop = false;
+			this.picbox_focused_on.Visible = false;
+			this.picbox_focused_on.Click += new System.EventHandler(this.picbox_focused_Click);
+			// 
+			// picbox_focused_off
+			// 
+			this.picbox_focused_off.BackColor = System.Drawing.Color.Transparent;
+			this.picbox_focused_off.Image = global::ArchlordInfinityMacro.Properties.Resources.off;
+			this.picbox_focused_off.Location = new System.Drawing.Point(826, 538);
+			this.picbox_focused_off.Name = "picbox_focused_off";
+			this.picbox_focused_off.Size = new System.Drawing.Size(55, 25);
+			this.picbox_focused_off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.picbox_focused_off.TabIndex = 124;
+			this.picbox_focused_off.TabStop = false;
+			this.picbox_focused_off.Click += new System.EventHandler(this.picbox_focused_off_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label1.Location = new System.Drawing.Point(45, 556);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(54, 13);
+			this.label1.TabIndex = 125;
+			this.label1.Text = "Version: 1";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label2.Location = new System.Drawing.Point(827, 522);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(48, 13);
+			this.label2.TabIndex = 126;
+			this.label2.Text = "Focused";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.Transparent;
+			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label3.Location = new System.Drawing.Point(912, 521);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(47, 13);
+			this.label3.TabIndex = 127;
+			this.label3.Text = "Running";
+			// 
+			// picbox_running_on
+			// 
+			this.picbox_running_on.BackColor = System.Drawing.Color.Transparent;
+			this.picbox_running_on.Image = global::ArchlordInfinityMacro.Properties.Resources.on;
+			this.picbox_running_on.Location = new System.Drawing.Point(915, 537);
+			this.picbox_running_on.Name = "picbox_running_on";
+			this.picbox_running_on.Size = new System.Drawing.Size(55, 25);
+			this.picbox_running_on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.picbox_running_on.TabIndex = 128;
+			this.picbox_running_on.TabStop = false;
+			this.picbox_running_on.Visible = false;
+			// 
+			// picbox_running_off
+			// 
+			this.picbox_running_off.BackColor = System.Drawing.Color.Transparent;
+			this.picbox_running_off.Image = global::ArchlordInfinityMacro.Properties.Resources.off;
+			this.picbox_running_off.Location = new System.Drawing.Point(915, 537);
+			this.picbox_running_off.Name = "picbox_running_off";
+			this.picbox_running_off.Size = new System.Drawing.Size(55, 25);
+			this.picbox_running_off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.picbox_running_off.TabIndex = 129;
+			this.picbox_running_off.TabStop = false;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -934,6 +1025,13 @@
 			this.BackgroundImage = global::ArchlordInfinityMacro.Properties.Resources.mainform;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.ClientSize = new System.Drawing.Size(1024, 575);
+			this.Controls.Add(this.picbox_running_off);
+			this.Controls.Add(this.picbox_running_on);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.picbox_focused_off);
+			this.Controls.Add(this.picbox_focused_on);
 			this.Controls.Add(this.listBox_ServerSelect);
 			this.Controls.Add(this.btn_settings);
 			this.Controls.Add(this.btn_minimaze);
@@ -978,7 +1076,12 @@
 			this.tabPage1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_focused_on)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_focused_off)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_running_on)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picbox_running_off)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
@@ -1060,6 +1163,13 @@
 		private System.Windows.Forms.Button btn_minimaze;
 		private System.Windows.Forms.Button btn_settings;
 		private System.Windows.Forms.ListBox listBox_ServerSelect;
+		private System.Windows.Forms.PictureBox picbox_focused_on;
+		private System.Windows.Forms.PictureBox picbox_focused_off;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.PictureBox picbox_running_on;
+		private System.Windows.Forms.PictureBox picbox_running_off;
 	}
 }
 

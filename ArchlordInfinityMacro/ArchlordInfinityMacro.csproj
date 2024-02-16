@@ -55,7 +55,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>AIM.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\AIM.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
@@ -140,10 +140,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AIM.ico" />
     <Content Include="Models\ArchlordMessenger.png" />
     <Content Include="Resources\AIM.ico" />
     <Content Include="Resources\button.png" />
+    <Content Include="Resources\off.png" />
+    <Content Include="Resources\on.png" />
     <Content Include="Resources\mainform.jpg" />
   </ItemGroup>
   <ItemGroup>
